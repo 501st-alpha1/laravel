@@ -1,0 +1,20 @@
+{
+    "run_list": ["recipe[laravel::default]"],
+    "laravel": {
+        "project_name": "test_app",
+        "github_oauth": "FIXME"
+    },
+    "mysql": {
+        "server_root_password": "",
+        "server_debian_password": "",
+        "server_repl_password": ""
+    },
+    "php": {
+        "install_method": "source",
+        "version": "5.6.16",
+        "checksum": "b6618df6b11a275fa28596f1775727679f8492e100f3bd488d8a8bfbfc19349f",
+        "url": "http://us2.php.net/get",
+        // FIXME
+        "ext_conf_dir": "/etc/php5/mods-available"
+    }
+}

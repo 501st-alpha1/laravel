@@ -7,6 +7,10 @@ provisioner:
 
 platforms:
   - name: ubuntu-14.04
+    attributes:
+      php:
+        # FIXME
+        ext_conf_dir: "/etc/php5/mods-available"
 
 suites:
   - name: default
@@ -20,6 +24,3 @@ suites:
         server_root_password: ""
         server_debian_password: ""
         server_repl_password: ""
-      php:
-        # FIXME
-        ext_conf_dir: "/etc/php5/mods-available"

@@ -35,5 +35,15 @@ module Laravel
         Socket.ip_address_list.map { |a| a.ip_address }.include? Resolv.getaddress host
       end
     end
+
+    def platform_has_phpenmod?(platform)
+      if platform?("debian")
+        true
+      elsif platform?("ubuntu")
+        true
+      else
+        false
+      end
+    end
   end
 end
